@@ -1,0 +1,112 @@
+/* ================== Estilo Global ================== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================== Header ================== */
+header {
+  background-color: #1877f2;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ================== Footer ================== */
+footer {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  color: #6b7280;
+}
+
+/* ================== Feed y Post ================== */
+.feed {
+  max-width: 900px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+}
+
+.post-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1877f2; /* azul por defecto */
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.avatar-green {
+  background-color: #34d399; /* verde */
+}
+
+.avatar-blue {
+  background-color: #1877f2; /* azul */
+}
+
+.post-content h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.post-content p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.post-actions {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.post-actions span {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.post-actions span:hover {
+  color: #1877f2;
+}
